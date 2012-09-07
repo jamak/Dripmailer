@@ -1,0 +1,9 @@
+{% if latest_email_list %}
+    <ul>
+    {% for email in latest_email_list %}
+        <li><a href="/emails/{{ email.id }}/">{{ email.type }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No emails are available.</p>
+{% endif %}

@@ -1,0 +1,9 @@
+{% if latest_prospect_list %}
+    <ul>
+    {% for prospect in latest_campaign_list %}
+        <li><a href="/prospects/{{ campaign.id }}/">{{ campaign.type }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No prospects are available.</p>
+{% endif %}
